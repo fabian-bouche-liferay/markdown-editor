@@ -1,0 +1,8 @@
+assemble:
+    - from: build/static
+      into: static
+markdown-editor-cx-js-import-maps-entry:
+    bareSpecifier: markdownEditorCX
+    name: Markdown Editor CX JS Import Maps Entry
+    type: jsImportMapsEntry
+    url: assets/index-*.js

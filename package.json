@@ -1,0 +1,35 @@
+{
+  "name": "markdown-editor-cx",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@clayui/core": "^3.140.0",
+    "@clayui/css": "^3.139.1",
+    "@clayui/list": "^3.140.0",
+    "@uiw/react-md-editor": "^4.0.11",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "rehype-sanitize": "^6.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "homepage": "https://fabian-bouche-liferay.github.io/react-routing-demo-cx/",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "vite": "^6.1.1"
+  }
+}
