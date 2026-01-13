@@ -78,6 +78,7 @@ export default function MarkdownRenderer({ value, objectEntryId, objectDefinitio
     })
       .then((r) => r.json())
       .then((json) => {
+        console.log("JSON: " + JSON.stringify(json));
         const path =
           json?.data?.objectAdmin_v1_0?.objectDefinition?.restContextPath || null;
         setObjectRestContextPath(path);
@@ -86,11 +87,22 @@ export default function MarkdownRenderer({ value, objectEntryId, objectDefinitio
   }, [objectDefinitionId]);
 
   useEffect(() => {
+
+    console.log("ObjectEntryId: " + objectEntryId + " - objectRestContextPath: " + objectRestContextPath);
+
     if (objectEntryId != null && objectRestContextPath != null) {
       window.Liferay.Util.fetch(`${objectRestContextPath}/${objectEntryId}`)
-        .then((r) => r.json())
-        .then(setObjectEntry)
-        .catch(() => setObjectEntry(null));
+        .then((r) => {
+          return r.json();
+        })
+        .then((json) => {
+          console.log(JSON.stringify(json));
+          setObjectEntry(json);
+        })
+        .catch((err) => {
+          console.log(err);
+          setObjectEntry(null);
+        });
     } else {
       setObjectEntry(null);
     }
