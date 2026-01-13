@@ -11,16 +11,16 @@
 		<div class="d-flex">
 			
 			<markdown-editor
-		    aria-describedby="${fragmentElementId}-textarea-help-text"
-		    aria-labelledby="${fragmentElementId}-textarea-label [#if  input.errorMessage?has_content]${fragmentElementId}-textarea-error-message[/#if]"
-		    class="mt-2 mb-2 w-100" 
-		    [#if input.attributes.disabled?? && input.attributes.disabled]disabled[/#if]
-		    id="${fragmentElementId}-textarea"
-		    name="${input.name}"
+		        aria-describedby="${fragmentElementId}-textarea-help-text"
+		        aria-labelledby="${fragmentElementId}-textarea-label [#if  input.errorMessage?has_content]${fragmentElementId}-textarea-error-message[/#if]"
+		        class="mt-2 mb-2 w-100" 
+		        [#if input.attributes.disabled?? && input.attributes.disabled]disabled[/#if]
+		        id="${fragmentElementId}-textarea"
+		        name="${input.name}"
 				height=${configuration.height}
-		    placeholder="${configuration.placeholder}"
-		    [#if input.readOnly]readonly[/#if]
-		    ${input.required?then('required', '')}
+    		    placeholder="${configuration.placeholder}"
+	    	    [#if input.readOnly]readonly[/#if]
+		        ${input.required?then('required', '')}
 			>[#if input.value??]${input.value}[/#if]</markdown-editor>
 
 			[#if !input.localizable && input.attributes.unlocalizedFieldsMessage??]
