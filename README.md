@@ -8,3 +8,23 @@ Create the two fragments described in the fragment directory.
  - The other one is a regular fragment, to render Markdown
 
 Works against Liferay objects where markdown is written to a Long Text field.
+
+## Custom url schemes for pictures
+
+### Picture from an object field
+
+```
+![image alt](liferay://object-field/objectFieldName)
+```
+
+Where `objectFieldName` is the name of the object field which contains a picture (attachment type).
+
+### Picture from the document library
+
+```
+![image alt](liferay://document-library/externalReferenceCode)
+```
+
+Where `externalReferenceCode` is the ERC of the document from the site's document library.
+
+It's limited to documents from the current site for the moment.
