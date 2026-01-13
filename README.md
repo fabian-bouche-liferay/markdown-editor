@@ -1,6 +1,8 @@
 # Markdown editor and renderer for Liferay Objects
 
-[![See the demo](https://github.com/fabian-bouche-liferay/markdown-editor/blob/master/doc/video-thumbnail.png)](https://github.com/fabian-bouche-liferay/markdown-editor/blob/master/doc/markdown-cx.mp4)
+[![Démo](doc/demo-thumbnail.png)](
+https://raw.githubusercontent.com/fabian-bouche-liferay/markdown-editor/master/doc/markdown-cx.mp4
+)
 
 ## How to
 
