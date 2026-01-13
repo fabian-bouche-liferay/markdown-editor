@@ -28,3 +28,11 @@ Where `objectFieldName` is the name of the object field which contains a picture
 Where `externalReferenceCode` is the ERC of the document from the site's document library.
 
 It's limited to documents from the current site for the moment.
+
+## Required permissions
+
+For each object field with an image, the viewer must have the associated Download permission.
+
+And in addition to that, we have to give `Guest` the `View` permission against the object definition.
+
+The reason is there is a required call to dynamically get the `restContextPath` of the Object Definition so as to call the Object's REST API.
