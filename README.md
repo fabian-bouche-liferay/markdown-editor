@@ -17,6 +17,13 @@ Create the two fragments described in the fragment directory.
 
 Works against Liferay objects where markdown is written to a Long Text field.
 
+## Create the custom fragments
+
+See under the `/fragments` folder of this repo.
+
+ - `markdown-textarea` is a custom **Form Fragment** which you will associate with the **Long Text** field type.
+ - `markdown-renderer` is a custom **Basic Fragment** used to render Markdown to HTML.
+
 ## Custom url schemes for pictures
 
 ### Picture from an object field
