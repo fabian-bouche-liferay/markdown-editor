@@ -1,4 +1,8 @@
-# How to
+# Markdown editor and renderer for Liferay Objects
+
+[![See the demo](https://github.com/fabian-bouche-liferay/markdown-editor/blob/master/doc/video-thumbnail.png)](https://github.com/fabian-bouche-liferay/markdown-editor/blob/master/doc/markdown-cx.mp4)
+
+## How to
 
 Deploy the client extension `blade gw clean deploy`
 
