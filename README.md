@@ -33,10 +33,10 @@ It's limited to documents from the current site for the moment.
 
 For each object field with an image, the viewer must have the associated Download permission.
 
-![image](https://github.com/fabian-bouche-liferay/markdown-editor/doc/download-permission.png)
+![image](https://github.com/fabian-bouche-liferay/markdown-editor/blob/master/doc/download-permission.png)
 
 And in addition to that, we have to give `Guest` the `View` permission against the object definition.
 
-![image](https://github.com/fabian-bouche-liferay/markdown-editor/doc/guest-view-permission-object-definition.png)
+![image](https://github.com/fabian-bouche-liferay/markdown-editor/blob/master/doc/guest-view-permission-object-definition.png)
 
 The reason is there is a required call to dynamically get the `restContextPath` of the Object Definition so as to call the Object's REST API.
