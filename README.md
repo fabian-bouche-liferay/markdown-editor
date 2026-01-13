@@ -1,5 +1,7 @@
 # Markdown editor and renderer for Liferay Objects
 
+Click the picture below to download a demo video:
+
 [![Démo](doc/demo-thumbnail.png)](
 https://raw.githubusercontent.com/fabian-bouche-liferay/markdown-editor/master/doc/markdown-cx.mp4
 )
