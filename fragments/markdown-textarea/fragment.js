@@ -23,7 +23,7 @@ function main() {
 				});
 
 				textarea.addEventListener('change', (event) => {
-					onChange(event.target.value); // ✅ value, pas textContent
+					onChange(event.target.value);
 				});
 			} else {
 				registerUnlocalizedInput({
@@ -56,7 +56,6 @@ function main() {
 					const className = cn?.value;
 
 					if (!className) {
-						//console.error('Impossible de résoudre className depuis classNameId', classNameId);
 						return;
 					}
 

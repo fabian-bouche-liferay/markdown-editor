@@ -32,7 +32,7 @@ function uiwCssShadowFix() {
 
   if (!mdeditorCssPath || !markdownCssPath) {
     throw new Error(
-      `[uiw-css-shadow-fix] CSS introuvable. mdeditor=${mdeditorCssPath} markdown=${markdownCssPath}`
+      `[uiw-css-shadow-fix] CSS not found. mdeditor=${mdeditorCssPath} markdown=${markdownCssPath}`
     );
   }
 
